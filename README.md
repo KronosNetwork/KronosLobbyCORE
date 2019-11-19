@@ -1,0 +1,2 @@
+# KronosLobbyCORE
+Kronos Lobby CORE
