@@ -18,7 +18,7 @@ use pocketmine\utils\TextFormat as C;
 
 use pocketmine\event\player\PlayerItemHeldEvent;
 
-class AL3XPI\KronosLobbyCORE extends PluginBase implements Listener{
+class KronosLobbyCORE extends PluginBase implements Listener{
 
           public function onLoad(){
                     $this->getLogger()->info("KronosLobbyCORE by AL3XPI Loading");
@@ -37,8 +37,8 @@ class AL3XPI\KronosLobbyCORE extends PluginBase implements Listener{
          }
 	 public function onItemHeld(PlayerItemHeldEvent $event){
 		if($item->getId() === Item::STICK){
-		$command = '1vs1 join'; // You can get this command from config or whatever you want
+		$command = '1vs1 join';
 		$this->getServer()->dispatchCommand($event->getPlayer(), $command); // Dispatch the command;
-	 }
-    }
+	 	}
+    	 }
 }
