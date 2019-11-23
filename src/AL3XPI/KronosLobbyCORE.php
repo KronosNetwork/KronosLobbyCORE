@@ -16,6 +16,8 @@ use pocketmine\event\Listener;
 
 use pocketmine\utils\TextFormat as C;
 
+use pocketmine\event\player\PlayerItemHeldEvent;
+
 class KronosLobbyCORE extends PluginBase implements Listener{
 
           public function onLoad(){
