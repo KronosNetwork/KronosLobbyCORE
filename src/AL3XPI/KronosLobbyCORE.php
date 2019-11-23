@@ -1,6 +1,6 @@
 <?php
 
-namespace AL3XPI\KronosLobbyCORE;
+namespace KronosLobbyCORE;
 
 use pocketmine\plugin\PluginBase;
 
