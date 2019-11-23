@@ -18,6 +18,10 @@ use pocketmine\utils\TextFormat as C;
 
 use pocketmine\event\player\PlayerItemHeldEvent;
 
+use pocketmine\command\Command;
+
+use pocketmine\command\ComamndSender;
+
 class KronosLobbyCORE extends PluginBase implements Listener{
 
           public function onLoad(){
@@ -41,4 +45,14 @@ class KronosLobbyCORE extends PluginBase implements Listener{
 		$this->getServer()->dispatchCommand($event->getPlayer(), $command); // Dispatch the command;
 	 	}
     	 }
+  	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+    	$commandName = $command->getName();
+    	if($commandName === "nick"){
+	this->openNickForm($sender);
+		
+	}
+      	return true;
+    	}
+    	return false;
+  	}
 }
