@@ -3,3 +3,8 @@ author: AL3XPI
 api: 3.0.0
 version: 1.0.0
 main: AL3XPI\KronosLobbyCORE
+commands:
+  nick:
+    description: Nickname
+    usage: /nick <nickname>
+    aliases: [nickname, n]
