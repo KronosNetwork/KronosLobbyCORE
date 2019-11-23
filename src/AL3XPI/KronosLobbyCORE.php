@@ -37,7 +37,7 @@ class KronosLobbyCORE extends PluginBase implements Listener{
          }
 	 public function onItemHeld(PlayerItemHeldEvent $event){
 		if($item->getId() === Item::STICK){
-		$command = '1vs1 join' // You can get this command from config or whatever you want
+		$command = '1vs1 join'; // You can get this command from config or whatever you want
 		$this->getServer()->dispatchCommand($event->getPlayer(), $command); // Dispatch the command;
 	 }
     }
