@@ -18,7 +18,7 @@ use pocketmine\utils\TextFormat as C;
 
 use pocketmine\event\player\PlayerItemHeldEvent;
 
-class KronosLobbyCORE\KronosLobbyCORE extends PluginBase implements Listener{
+class AL3XPI\KronosLobbyCORE extends PluginBase implements Listener{
 
           public function onLoad(){
                     $this->getLogger()->info("KronosLobbyCORE by AL3XPI Loading");
