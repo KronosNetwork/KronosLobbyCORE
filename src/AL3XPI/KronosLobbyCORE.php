@@ -1,6 +1,6 @@
 <?php
 
-namespace AL3XPI;
+namespace AL3XPI\KronosLobbyCORE;
 
 use pocketmine\plugin\PluginBase;
 
@@ -33,11 +33,12 @@ class KronosLobbyCORE extends PluginBase implements Listener{
 	  public function onJoin(PlayerJoinEvent $event){
   		$player = $event->getPlayer();
    		$name = $player->getName();
-   		$this->getServer()->broadcastMessage(C::GREEN."[+]$name");
+   		$event->setJoinMessage(C::GREEN."[+]$name");
+         }
 	 public function onItemHeld(PlayerItemHeldEvent $event){
 		if($item->getId() === Item::STICK){
 		$command = '1vs1 join' // You can get this command from config or whatever you want
 		$this->getServer()->dispatchCommand($event->getPlayer(), $command); // Dispatch the command;
 	 }
-}
+    }
 }
